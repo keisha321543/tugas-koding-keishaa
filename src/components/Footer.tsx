@@ -5,10 +5,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/keisha321543', label: 'GitHub' },
+    { icon: Youtube, href: 'https://youtube.com/@keishamuhanna?si=OhAvcx1keBm9uNb4', label: 'YouTube' },
+    { icon: Instagram, href: 'https://www.instagram.com/keishajlfa?igsh=MTlraDlnbGR1dDJnYQ==', label: 'Instagram' },
   ];
 
   return (
@@ -23,7 +22,7 @@ export default function Footer() {
           >
             <span>© {currentYear} Made with</span>
             <Heart className="h-4 w-4 text-destructive fill-destructive" />
-            <span>by Developer</span>
+            <span>by Keisha M</span>
           </motion.div>
 
           <motion.div
