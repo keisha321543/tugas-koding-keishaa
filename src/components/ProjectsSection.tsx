@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, } from 'framer-motion';
 import { ExternalLink, Github, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -7,7 +7,7 @@ const projects = [
     title: 'Learning Hacks',
     description: 'Rahasia Belajar Efektif Anak SMA.',
     tags: [ 'Study Hacks', 'Efisiensi', 'Productivity', 'Tips Cerdas'],
-    image: ['🧠', '📚', '⚡'],
+    image: '📚',
     color: 'from-blue-500/20 to-cyan-500/20',
     github: '#',
     demo: '#',
@@ -16,7 +16,7 @@ const projects = [
     title: 'Learning Management System',
     description: 'Platform pembelajaran online dengan video streaming, quiz interaktif, dan progress tracking.',
     tags: ['Next.js', 'TypeScript', 'MongoDB', 'WebRTC'],
-    image: ['💻', '✨', '📱'],
+    image: '💻',
     color: 'from-purple-500/20 to-pink-500/20',
     github: '#',
     demo: '#',
@@ -25,7 +25,7 @@ const projects = [
     title: 'Optimalisasi Waktu Siswa',
     description: 'Strategi pengelolaan jadwal harian untuk meningkatkan efektifitas belajar.',
     tags: ['Produktivitas', 'Manajemen', 'Siswa'],
-    image: ['⏳', '📅', '✅'] ,
+    image: '⏳',
     color: 'from-orange-500/20 to-red-500/20',
     github: '#',
     demo: '#',
@@ -34,7 +34,7 @@ const projects = [
     title: 'Inovasi Edukasi Digital',
     description: 'Pemanfaatan teknologi modern untuk menciptakan pengalaman belajar yang lebih kreatif, dan menyenangkan bagi pelajar.',
     tags: ['Digital', 'Edukasi', 'Modern'],
-    image: ['💻', '✨', '🖥️'],
+    image: '✨',
     color: 'from-green-500/20 to-teal-500/20',
     github: '#',
     demo: '#',
@@ -43,7 +43,7 @@ const projects = [
     title: 'Eksplorasi Pembelajaran Interaktif',
     description: 'Media pembelajaran berbasis video yang dirancang secara dinamis untuk memudahkan pemahaman konsep melalui visualisasi yang menarik dan sistematis.".',
     tags: ['Video', "Edukasi"],
-    image: ['🎥', '🧠', '💡'],
+    image: '🎥',
     color: 'from-red-500/20 to-orange-500/20',
     isContent: true,
     youtube: '#',
@@ -52,7 +52,7 @@ const projects = [
     title: 'Student Tips & Tricks',
     description: 'Kumpulan metode pembelajaran efektif dan strategi manajemen waktu bagi peserta didik untuk meningkatkan efisiensi belajar serta hasil akademik secara optimal.',
     tags: ['Self-Development', 'Produktivitas', 'Literasi', 'Strategi Belajar'],
-    image: ['💡', '📝', '✅'],
+    image: '💡',
     color: 'from-cyan-500/20 to-blue-500/20',
     isContent: true,
     youtube: '#',
