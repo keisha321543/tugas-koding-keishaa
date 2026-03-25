@@ -3,10 +3,10 @@ import { Code2, Video, Coffee, Rocket } from 'lucide-react';
 
 export default function AboutSection() {
   const stats = [
-    { icon: Code2, value: '50+', label: 'Projects Selesai' },
-    { icon: Video, value: '100+', label: 'Video Konten' },
-    { icon: Coffee, value: '1000+', label: 'Cangkir Kopi' },
-    { icon: Rocket, value: '5+', label: 'Tahun Pengalaman' },
+    { icon: Code2, value: '50+', label: 'Tugas Selesai' },
+    { icon: Video, value: '12+', label: 'Prestasi Akademik' },
+    { icon: Coffee, value: '50+', label: 'Tinta Pulpen' },
+    { icon: Rocket, value: '7+', label: 'Jejak Rekam Akademik' },
   ];
 
   return (
@@ -54,18 +54,16 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <h3 className="font-display text-2xl md:text-3xl font-bold">
-              Passionate Developer &amp; Creator
+              Profil Singkat &amp; Creator
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Saya adalah seorang Fullstack Web Developer dengan passion yang kuat dalam menciptakan 
-              solusi digital yang inovatif. Dengan pengalaman lebih dari 5 tahun, saya telah 
-              membantu berbagai klien dan perusahaan dalam mewujudkan ide-ide mereka menjadi 
-              aplikasi web yang powerful dan user-friendly.
+              Nama saya Keisha Muhanna Julfa, saya lahir di Banda Aceh pada tanggal 16 Juli 2010, kini saya berdomisili di Lamara, 
+              dan saat ini saya sedang menempuh pendidikan di Man 1 Banda Aceh.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Selain coding, saya juga aktif sebagai Content Creator, berbagi pengetahuan 
-              tentang pemrograman dan teknologi melalui berbagai platform. Saya percaya bahwa 
-              berbagi ilmu adalah cara terbaik untuk terus belajar dan berkembang.
+              Fokus utama saya adalah terus berkembang dan mengasah kemampuan setiap hari. 
+              Saya sangat menghargai waktu dan selalu berkomitmen untuk menyelesaikan 
+              setiap tanggung jawab yang diberikan dengan hasil yang maksimal.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {stats.map((stat, index) => (
