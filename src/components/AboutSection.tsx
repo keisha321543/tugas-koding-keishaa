@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Code2, Video, Coffee, Rocket } from 'lucide-react';
+import { BookAIcon, TrophyIcon, PenIcon, Rocket, BookIcon } from 'lucide-react';
 
 export default function AboutSection() {
   const stats = [
-    { icon: Code2, value: '50+', label: 'Tugas Selesai' },
-    { icon: Video, value: '12+', label: 'Prestasi Akademik' },
-    { icon: Coffee, value: '50+', label: 'Tinta Pulpen' },
+    { icon: BookIcon, value: '50+', label: 'Tugas Selesai' },
+    { icon: TrophyIcon, value: '12+', label: 'Prestasi Akademik' },
+    { icon: PenIcon, value: '50+', label: 'Tinta Pulpen' },
     { icon: Rocket, value: '7+', label: 'Jejak Rekam Akademik' },
   ];
 
