@@ -19,19 +19,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'keishaamuhanna@gmail.com',
+    href: 'mailto:keishamuhanna@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '+62 853 6263 9422',
+    href: 'https://wa.me/:+6285362639422',
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    value: 'Banda Aceh, Indonesia',
     href: '#',
   },
 ];
@@ -86,7 +86,7 @@ export default function ContactSection() {
       });
 
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Error sending email:', error);
       toast({
         title: 'Gagal Mengirim',
@@ -99,7 +99,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32">
+    <section id="contact" className="py-20 md:py-32 bg-slate-950 text-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -133,8 +133,16 @@ export default function ContactSection() {
                 menghubungi saya. Saya selalu terbuka untuk diskusi tentang project 
                 baru, ide kreatif, atau kesempatan untuk menjadi bagian dari visi Anda.
               </p>
-            </div>
-
+            <div className="flex flex-col gap-4 mt-6">
+               <a 
+                 href="https://wa.me/6285362639422" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="text-primary hover:underline font-medium">
+               📱 Hubungi saya via WhatsApp
+             </a>
+           </div>
+            </div> 
             <div className="space-y-4">
               {contactInfo.map((info, index) => (
                 <motion.a
@@ -165,7 +173,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6 p-6 glass rounded-2xl shadow-card">
+            <form action= "https://formspree.io/f/mnjoakqd" method="POST" className="space-y-6 p-6 glass rounded-2xl shadow-card">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
@@ -240,7 +248,7 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full rounded-full"
+                className="w-full rounded-full transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
